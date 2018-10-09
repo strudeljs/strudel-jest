@@ -1,0 +1,15 @@
+{
+  "name": "strudel-jest",
+  "version": "0.0.1",
+  "description": "Strudel mocks",
+  "main": "index.js",
+  "author": "Mikołaj Kozakiewicz <smmiki@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "strudel",
+    "jest"
+  ],
+  "dependencies": {
+    "events": "^3.0.0"
+  }
+}
