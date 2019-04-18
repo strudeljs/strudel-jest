@@ -3,13 +3,27 @@
   "version": "0.0.1",
   "description": "Strudel mocks",
   "main": "index.js",
+  "files": [
+    "setup/*.js",
+    "index.js",
+    "jest-preset.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strudeljs/strudel-jest"
+  },
   "author": "Mikołaj Kozakiewicz <smmiki@gmail.com>",
   "license": "MIT",
   "keywords": [
     "strudel",
     "jest"
   ],
-  "dependencies": {
-    "events": "^3.0.0"
+  "devDependencies": {
+    "mutation-observer": "^1.0.3"
+  },
+  "peerDependencies": {
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "strudel": "^0.9.2"
   }
 }
