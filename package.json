@@ -1,6 +1,6 @@
 {
   "name": "strudel-jest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strudel mocks",
   "main": "index.js",
   "files": [
