@@ -4,10 +4,13 @@ const createWrapperStructure = (el) => ({
     $element: el.__strudel__.$element,
 });
 
-export const createComponentWrapper = (markup) => (
-    new Promise((resolve) => {
+export const createComponentWrapper = (markup) => {
+    const regex = /\s*(?=<)/g;
+    const strippedMarkup = markup.trim().replace(regex, '');
+
+    return new Promise((resolve) => {
         let el = document.createElement('div');
-        el.innerHTML = markup;
+        el.innerHTML = strippedMarkup;
         el = el.firstChild;
         el = document.body.appendChild(el);
 
@@ -16,5 +19,5 @@ export const createComponentWrapper = (markup) => (
         });
 
         window.document.dispatchEvent(new Event('content:loaded'));
-    })
-);
+    });
+};
