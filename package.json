@@ -1,7 +1,7 @@
 {
   "name": "strudel-jest",
   "version": "1.0.2",
-  "description": "Strudel mocks",
+  "description": "Strudel preset and helpers for Jest",
   "main": "index.js",
   "files": [
     "setup/*.js",
